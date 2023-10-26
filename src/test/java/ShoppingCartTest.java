@@ -68,9 +68,12 @@ public class ShoppingCartTest {
         browser.findElement(By.name("q")).clear();
         browser.findElement(By.name("q")).sendKeys("20");
         browser.findElement(By.cssSelector("[value=Update]")).click();
-        String discountPercent = browser.findElement(By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[5]/p/b")).getText();
-        String discount$ = browser.findElement(By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[6]")).getText();
-        String total$ = browser.findElement(By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[7]")).getText();
+        String discountPercent = browser.findElement(
+                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[5]/p/b")).getText();
+        String discount$ = browser.findElement(
+                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[6]")).getText();
+        String total$ = browser.findElement(
+                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[7]")).getText();
 
         Assert.assertEquals(discountPercent, "2", "Значение скидки неверное");
         Assert.assertEquals(discount$, "4.0", "Значение суммы скидки неверное");
@@ -79,9 +82,12 @@ public class ShoppingCartTest {
         browser.findElement(By.name("q")).clear();
         browser.findElement(By.name("q")).sendKeys("21");
         browser.findElement(By.cssSelector("[value=Update]")).click();
-        discountPercent = browser.findElement(By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[5]/p/b")).getText();
-        discount$ = browser.findElement(By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[6]")).getText();
-        total$ = browser.findElement(By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[7]")).getText();
+        discountPercent = browser.findElement(
+                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[5]/p/b")).getText();
+        discount$ = browser.findElement(
+                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[6]")).getText();
+        total$ = browser.findElement(
+                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[7]")).getText();
 
         Assert.assertEquals(discountPercent, "2", "Значение скидки неверное");
         Assert.assertEquals(discount$, "4.2", "Значение суммы скидки неверное");
@@ -90,9 +96,12 @@ public class ShoppingCartTest {
         browser.findElement(By.name("q")).clear();
         browser.findElement(By.name("q")).sendKeys("48");
         browser.findElement(By.cssSelector("[value=Update]")).click();
-        discountPercent = browser.findElement(By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[5]/p/b")).getText();
-        discount$ = browser.findElement(By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[6]")).getText();
-        total$ = browser.findElement(By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[7]")).getText();
+        discountPercent = browser.findElement(
+                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[5]/p/b")).getText();
+        discount$ = browser.findElement(
+                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[6]")).getText();
+        total$ = browser.findElement(
+                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[7]")).getText();
 
         Assert.assertEquals(discountPercent, "2", "Значение скидки неверное");
         Assert.assertEquals(discount$, "9.6", "Значение суммы скидки неверное");
@@ -101,9 +110,12 @@ public class ShoppingCartTest {
         browser.findElement(By.name("q")).clear();
         browser.findElement(By.name("q")).sendKeys("49");
         browser.findElement(By.cssSelector("[value=Update]")).click();
-        discountPercent = browser.findElement(By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[5]/p/b")).getText();
-        discount$ = browser.findElement(By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[6]")).getText();
-        total$ = browser.findElement(By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[7]")).getText();
+        discountPercent = browser.findElement(
+                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[5]/p/b")).getText();
+        discount$ = browser.findElement(
+                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[6]")).getText();
+        total$ = browser.findElement(
+                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[7]")).getText();
 
         Assert.assertEquals(discountPercent, "2", "Значение скидки неверное");
         Assert.assertEquals(discount$, "9.8", "Значение суммы скидки неверное");

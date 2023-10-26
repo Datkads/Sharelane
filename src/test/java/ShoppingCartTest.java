@@ -75,5 +75,6 @@ public class ShoppingCartTest {
         Assert.assertEquals(discountPercent, "2", "Значение скидки неверное");
         Assert.assertEquals(discount$, "4.0", "Значение суммы скидки неверное");
         Assert.assertEquals(total$, "196.00", "Значение итоговой цены неверное");
+
     }
 }

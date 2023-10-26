@@ -48,4 +48,9 @@ public class ShoppingCartTest {
         Assert.assertEquals(total$, "190.00");
         browser.quit();
     }
+
+    @Test
+    public void discount2() {
+
+    }
 }

@@ -30,7 +30,7 @@ public class ShoppingCartTest {
                 By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[6]")).getText();
         String total$ = browser.findElement(
                 By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[7]")).getText();
-        Assert.assertEquals(discountPercent, "0");
+        Assert.assertEquals(discountPercent, "0", "Значение скидки некорректное");
         Assert.assertEquals(discount$, "0.0");
         Assert.assertEquals(total$, "10.00");
 
@@ -43,7 +43,7 @@ public class ShoppingCartTest {
                 By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[6]")).getText();
         total$ = browser.findElement(
                 By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[7]")).getText();
-        Assert.assertEquals(discountPercent, "0");
+        Assert.assertEquals(discountPercent, "0", "Значение скидки некорректное");
         Assert.assertEquals(discount$, "0.0");
         Assert.assertEquals(total$, "190.00");
         browser.quit();

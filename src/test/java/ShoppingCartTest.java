@@ -25,27 +25,27 @@ public class ShoppingCartTest {
         browser.findElement(By.name("q")).sendKeys("1");
         browser.findElement(By.cssSelector("[value=Update]")).click();
         String discountPercent = browser.findElement(
-                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[1]/td[5]/p/b")).getText();
+                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[5]/p/b")).getText();
         String discount$ = browser.findElement(
-                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[1]/td[6]")).getText();
+                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[6]")).getText();
         String total$ = browser.findElement(
-                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[1]/td[7]")).getText();
+                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[7]")).getText();
         Assert.assertEquals(discountPercent, "0");
-        Assert.assertEquals(discount$, "0");
-        Assert.assertEquals(total$, "10");
+        Assert.assertEquals(discount$, "0.0");
+        Assert.assertEquals(total$, "10.00");
 
         browser.findElement(By.name("q")).clear();
         browser.findElement(By.name("q")).sendKeys("19");
         browser.findElement(By.cssSelector("[value=Update]")).click();
         discountPercent = browser.findElement(
-                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[1]/td[5]/p/b")).getText();
+                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[5]/p/b")).getText();
         discount$ = browser.findElement(
-                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[1]/td[6]")).getText();
+                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[6]")).getText();
         total$ = browser.findElement(
-                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[1]/td[7]")).getText();
+                By.xpath("//table/tbody/tr[6]/td/table/tbody/tr[2]/td[7]")).getText();
         Assert.assertEquals(discountPercent, "0");
-        Assert.assertEquals(discount$, "0");
-        Assert.assertEquals(total$, "190");
+        Assert.assertEquals(discount$, "0.0");
+        Assert.assertEquals(total$, "190.00");
         browser.quit();
     }
 }
